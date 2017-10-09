@@ -1,0 +1,45 @@
+{
+  "name": "karma-phantomjs-jasmine",
+  "version": "1.0.0",
+  "description": "a playground to reproduce test issues",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/benjclark/karma-phantomjs-jasmine.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browserify": "^14.1.0",
+    "childnode-remove": "^1.0.1",
+    "core-js": "^2.4.1",
+    "domtokenlist-shim": "^1.2.0",
+    "element-closest": "^2.0.2",
+    "es6-promise": "^3.2.1",
+    "jasmine-core": "^2.5.1",
+    "karma": "^1.3.0",
+    "karma-browserify": "^5.1.0",
+    "karma-jasmine": "^1.0.2",
+    "karma-jasmine-ajax": "git+https://github.com/springernature/karma-jasmine-ajax",
+    "karma-jasmine-jquery": "~0.1.1",
+    "karma-mocha-reporter": "^2.1.0",
+    "karma-phantomjs-launcher": "~1.0.0",
+    "keyboardevent-key-polyfill": "^1.0.2",
+    "number.isinteger": "^0.1.0",
+    "phantomjs-prebuilt": "~2.1.7",
+    "url-search-params-polyfill": "^1.0.2"
+  },
+  "dependencies": {
+    "regenerator-runtime": "^0.10.0",
+    "string.prototype.includes": "^1.0.0",
+    "whatwg-fetch": "^2.0.1"
+  },
+  "bugs": {
+    "url": "https://github.com/benjclark/karma-phantomjs-jasmine/issues"
+  },
+  "homepage": "https://github.com/benjclark/karma-phantomjs-jasmine#readme"
+}
