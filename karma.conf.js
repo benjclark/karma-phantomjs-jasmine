@@ -24,14 +24,11 @@ module.exports = function(config) {
         'test/*.js',
         'test/fixtures/*.html'
     ],
-    exclude: [
-        'test/*'
-    ],
     browserify: {
         debug: true,
         plugin: ['proxyquireify/plugin'],
         transform: ['babelify'],
-        paths: ['./modules/']
+        paths: ['./']
     },
     preprocessors: {
         'node_modules/core-js/fn/array/from.js': ['browserify'],

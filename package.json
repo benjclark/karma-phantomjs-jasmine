@@ -4,7 +4,7 @@
   "description": "a playground to reproduce test issues",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node_modules/.bin/karma start karma.conf.js --single-run"
   },
   "repository": {
     "type": "git",
@@ -14,6 +14,13 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "babel-eslint": "^7.0.0",
+    "babel-plugin-transform-async-to-generator": "^6.8.0",
+    "babel-plugin-transform-es2015-spread": "^6.8.0",
+    "babel-plugin-transform-object-assign": "^6.8.0",
+    "babel-preset-es2015": "^6.22.0",
+    "babel-preset-es2017": "~6.24.1",
+    "babelify": "^7.3.0",
     "browserify": "^14.1.0",
     "childnode-remove": "^1.0.1",
     "core-js": "^2.4.1",
@@ -31,12 +38,23 @@
     "keyboardevent-key-polyfill": "^1.0.2",
     "number.isinteger": "^0.1.0",
     "phantomjs-prebuilt": "~2.1.7",
+    "proxyquireify": "^3.2.1",
     "url-search-params-polyfill": "^1.0.2"
   },
   "dependencies": {
+    "babel-polyfill": "^6.13.0",
     "regenerator-runtime": "^0.10.0",
     "string.prototype.includes": "^1.0.0",
     "whatwg-fetch": "^2.0.1"
+  },
+  "babel": {
+    "presets": [
+      "es2015",
+      "es2017"
+    ],
+    "plugins": [
+      "transform-async-to-generator"
+    ]
   },
   "bugs": {
     "url": "https://github.com/benjclark/karma-phantomjs-jasmine/issues"
